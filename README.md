@@ -22,7 +22,7 @@ $ which python3
 python3 の仮想環境を作成する。
 
 ```bash
-$ ./script/setup-env.sh
+$ python3 -m venv .venv
 ```
 
 カレントディレクトリに .venv ディレクトリが作成される。
@@ -30,7 +30,7 @@ $ ./script/setup-env.sh
 以降、仮想環境上で作業するときは以下のスクリプトをターミナルを開くたびに実行して作業する。
 
 ```bash
-$ ./script/active-env.sh
+$ source .venv/bin/activate
 ```
 
 コマンドプロンプトが次のように (.venv) になっていることを確認する。
